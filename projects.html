@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slugarius' Repository</title>
+    <link rel="icon" href="res/Slugarius.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"></path>
+                <path d="M18 3v18"></path>
+                <path d="M3 9h18"></path>
+                <path d="M9 21V9"></path>
+            </svg>
+            EXPLORER
+        </div>
+        <div class="tree-item folder">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            docs
+        </div>
+        <div class="tree-content">
+            <div class="tree-item file html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <a href="index.html">README.html</a>
+            </div>
+        </div>
+        <div class="tree-item folder">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            src
+        </div>
+        <div class="tree-content">
+            <div class="tree-item file html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <a href="about.html">about.html</a>
+            </div>
+            <div class="tree-item file html active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <a href="projects.html">projects.html</a>
+            </div>
+            <div class="tree-item file html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <a href="contact.html">contact.html</a>
+            </div>
+            <div class="tree-item file html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <a href="notes.html">notes.html</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1># Projects</h1>
+
+        <p>Here are some of the projects I've made.</p>
+
+        <h2>## Salmon Engine</h2>
+
+        <img class="project-image" src="res/salmon_engine_1.png" alt="Salmon Engine">
+
+        <p><br>Salmon Engine is a game engine made in C++ that can be used to make both 3d and 2d games.<br>It uses the entity component system paradigm (ECS)
+        to maximize performance and cache-locality. It uses OpenGL for rendering, OpenAL for audio and ImGui for the editor GUI.<br>
+        It also has an editor where you can add entities and components. It saves the scene with JSON.</p>
+        <p>I integrated Jolt for the 3d physics engine, but for the 2d physics engine, I built my own. It's pretty good and stable and is quite performant. It functions quite similarly
+        to Box2D by using AABB trees for broad phase collision testing and SAT for polygon collisions.</p
+
+        <p>The main features it has are: 3d rendering, 2d rendering, lighting and shadow mapping, inverse kinematics, model importing, 3d physics, 2d physics, 
+        particle effects, skeletal animations, sprite animations and more.</p>
+
+        <p>You can find it here: <a href="https://github.com/TheSlugInTub/Salmon-Engine">https://github.com/TheSlugInTub/Salmon-Engine</a></p>
+        
+        <h2>## Devil's Descent</h2>
+
+        <img class="project-image" src="res/devils_descent_1.png" alt="Devil's Descent">
+
+        <p><br>Devil's Descent is a game I worked on in the Unity game engine. It's an FPS shooter mainly inspired by ULTRAKILL, where you gun down bad guys and escape the facility.<br>
+        There are three weapons, a pistol, a rifle which can shoot grenades, and a shotgun which can shoot energy orbs. Energy orbs are shot by other enemies and you can 
+        parry them to fling the energy orb back at them.</p>
+        
+        <p>You can find it here: <a href="https://slug-in-tub.itch.io/devils-descent-demo">https://slug-in-tub.itch.io/devils-descent-demo</a></p>
+        
+        <h2>## Death Shore</h2>
+
+        <img class="project-image" src="res/death_shore_1.png" alt="Death Shore">
+
+        <p><br>Death Shore is a top-down exploring/adventure game, where you traverse the isle of Death Shore and progress in the story by killing enemies, exploring dungeons,
+        and slaying bosses.</p>
+        
+        <p>You can find it here: <a href="https://slug-in-tub.itch.io/death-shore">https://slug-in-tub.itch.io/death-shore</a></p>
+    </div>
+</body>
+</html>

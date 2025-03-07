@@ -1,0 +1,186 @@
+:root {
+    /* Catppuccin Mocha colors */
+    --ctp-base: #1e1e2e;
+    --ctp-mantle: #181825;
+    --ctp-crust: #11111b;
+    --ctp-text: #cdd6f4;
+    --ctp-subtext0: #a6adc8;
+    --ctp-subtext1: #bac2de;
+    --ctp-surface0: #313244;
+    --ctp-surface1: #45475a;
+    --ctp-surface2: #585b70;
+    --ctp-overlay0: #6c7086;
+    --ctp-overlay1: #7f849c;
+    --ctp-blue: #89b4fa;
+    --ctp-lavender: #b4befe;
+    --ctp-sapphire: #74c7ec;
+    --ctp-sky: #89dceb;
+    --ctp-teal: #94e2d5;
+    --ctp-green: #a6e3a1;
+    --ctp-yellow: #f9e2af;
+    --ctp-peach: #fab387;
+    --ctp-maroon: #eba0ac;
+    --ctp-red: #f38ba8;
+    --ctp-mauve: #cba6f7;
+    --ctp-pink: #f5c2e7;
+    --ctp-flamingo: #f2cdcd;
+    --ctp-rosewater: #f5e0dc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: var(--ctp-base);
+    color: var(--ctp-text);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--ctp-mantle);
+    border-right: 1px solid var(--ctp-surface0);
+    padding-top: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 0 16px;
+    margin-bottom: 16px;
+    color: var(--ctp-lavender);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-header svg {
+    margin-right: 8px;
+}
+
+.tree-item {
+    padding: 4px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.tree-item:hover {
+    background-color: var(--ctp-surface0);
+}
+
+.tree-item.active {
+    background-color: var(--ctp-surface1);
+}
+
+.tree-item svg {
+    margin-right: 8px;
+    color: var(--ctp-blue);
+}
+
+.folder svg {
+    color: var(--ctp-yellow);
+}
+
+.file svg {
+    color: var(--ctp-sky);
+}
+
+.file.html svg {
+    color: var(--ctp-peach);
+}
+
+.file.css svg {
+    color: var(--ctp-blue);
+}
+
+.file.js svg {
+    color: var(--ctp-yellow);
+}
+
+.file.md svg {
+    color: var(--ctp-mauve);
+}
+
+.main-content {
+    flex: 1;
+    padding: 32px;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+h1 {
+    color: var(--ctp-mauve);
+    margin-bottom: 16px;
+}
+
+h2 {
+    color: var(--ctp-blue);
+    margin-bottom: 16px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: var(--ctp-text);
+}
+
+/* Explicit rule to ensure links stay inline in paragraphs */
+p a {
+    display: inline;
+    color: var(--ctp-blue);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: var(--ctp-sapphire);
+}
+
+pre {
+    background-color: var(--ctp-crust);
+    padding: 16px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 16px;
+}
+
+code {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--ctp-green);
+}
+
+a {
+    color: var(--ctp-blue);
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--ctp-sapphire);
+}
+
+.tree-content {
+    padding-left: 24px;
+}
+
+ul, ol {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.project-image {
+    width: 500px;
+}
